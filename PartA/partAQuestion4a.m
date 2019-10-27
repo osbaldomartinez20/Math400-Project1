@@ -1,15 +1,14 @@
-function [x] = partAQuestion2()
-%calculates the derivative of f(x)
-%by using a D0 matrix.
-f = @(x) exp(sin(x));
-fp = 4*pi;
+function [x] = partAQuestion4a()
+%set the function
+g = @(x)sin(x) + (2*sin(3*x)*cos(x));
+fp = 6 * pi;
 n = 100;
 
-%get w from partAQuestion1.m
-w = partAQuestion1();
+%get w from centerDiff.m
+w = centerDiff(g,n,fp);
 
 %get y from calculateY.m
-y = calculateY(f,n,fp);
+y = calculateY(g,n,fp);
 
 %get D0 from calculateD0.m
 D0 = calculateD0(n-1);

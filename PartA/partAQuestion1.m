@@ -7,3 +7,4 @@ n = 100;
 
 %get w from centerDiff.m
 w = centerDiff(f,n,fp);
+end

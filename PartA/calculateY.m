@@ -10,3 +10,5 @@ y = zeros(length(x)-1,1);
 for n = 1:length(x)-1
     y(n) = f(x(n));
 end
+
+end

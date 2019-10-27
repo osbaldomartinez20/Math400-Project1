@@ -7,6 +7,7 @@ function w = centerDiff(f,n,fp)
 %x from interval [0,fp) in n points, (0,fp,n).
 x = linspace(0,fp,n);
 w = zeros(length(x)-1,1);
+
 %max value of n = length(x)-1
 for n = 1:length(x)-1
     %find h in for each iteration
@@ -20,4 +21,6 @@ for n = 1:length(x)-1
     else
         w(n) = (f(x(n+1))-f(x(n-1))) / (2*h);
     end
+end
+
 end

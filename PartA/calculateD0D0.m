@@ -1,4 +1,4 @@
-function D0 = calculateD0(nmax)
+function D0D0 = calculateD0D0(nmax)
 %parameter nmax is a number to calculate the nmax * nmax matrix
 
 %make vectors that are full of
@@ -19,4 +19,7 @@ D0 = dP + dN;
 %to complete the D0 matrix.
 D0(nmax,1) = 1;
 D0(1,nmax) = -1;
+
+%compute D0D0
+D0D0 = D0 * D0;
 end
