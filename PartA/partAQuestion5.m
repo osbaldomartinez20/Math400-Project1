@@ -12,7 +12,7 @@ y = calculateY(f,n,fp);
 D0D0 = calculateD0n(n-1,2);
 
 %get D0y from calculateD0y.m
-D0D0y = calculateD0D0y(D0D0,y,n,fp);
+D0D0y = calculateD0ny(D0D0,y,n,fp,2);
 
 end
 
