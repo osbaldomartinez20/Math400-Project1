@@ -1,6 +1,6 @@
-function D0n = calculateD0n(nmax,n)
+function D0n = calculateD0n(nmax,k)
 %parameter nmax is a number to calculate the nmax * nmax matrix
-%n is the derivate performed n times.
+%k is the derivate performed n times.
 
 %make vectors that are full of
 %nmax-1 1s and -1s
@@ -24,7 +24,7 @@ D0(1,nmax) = -1;
 %compute D0n
 D0n = D0;
 i = 1;
-while n > i
+while k > i
     D0n = D0n*D0;
     i = i + 1;
 end
