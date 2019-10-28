@@ -8,8 +8,8 @@ function D0ny = calculateD0ny(D0n,y,n,fp,m)
 %multiply the D0 matrix and y vector, then
 %multiply each element by 1/2h.
 D0ny = (D0n*y);
-for n = 1: n-1
-    D0ny(n) = D0ny(n)/ ((2^m) * ((fp/n)^m));
+for i = 1: n-1
+    D0ny(i) = D0ny(i)/ ((2^m) * ((fp/i)^m));
 end
 
 end
