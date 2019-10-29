@@ -1,4 +1,4 @@
-function [x] = partAQuestion4a()
+function [w8] = partAQuestion4a()
 %set the function
 g = @(x)sin(x) + (2*sin(3*x)*cos(x));
 gP = @(x) cos(x) + (6*cos(x)*cos(3*x)) - (2*sin(x)*sin(3*x));
@@ -24,6 +24,7 @@ xlabel('X[0 to 6pi), n = 80 points');
 ylabel('Value of prime of g(x)');
 hold on;
 plot(linspace(0,fp,n80-1),y80);
+legend('Prime with center difference','Actual Prime');
 hold off;
 
 %graph of 20 points
@@ -33,6 +34,7 @@ xlabel('X[0 to 6pi), n = 20 points');
 ylabel('Value of prime of g(x)');
 hold on;
 plot(linspace(0,fp,n20-1),y20);
+legend('Prime with center difference','Actual Prime');
 hold off;
 
 %graph of 10 points
@@ -42,5 +44,7 @@ xlabel('X[0 to 6pi), n = 10 points');
 ylabel('Value of prime of g(x)');
 hold on;
 plot(linspace(0,fp,n10-1),y10);
+legend('Prime with center difference','Actual Prime');
 hold off;
+
 end

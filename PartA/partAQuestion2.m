@@ -22,4 +22,16 @@ D0y = calculateD0ny(D0,y,n,fp,1);
 x = zeros(n-1,2);
 x(:,1) = D0y;
 x(:,2) = w;
+
+%graph of both derivatives put together
+%Note if you see one line, it means values are the same
+figure();
+plot(linspace(0,fp,n-1),w);
+xlabel('X[0 to 4pi), n = 100 points');
+ylabel('Value of prime of w and D0y');
+hold on;
+plot(linspace(0,fp,n-1),D0y);
+legend('Prime with center difference','Prime with D0y');
+hold off;
+
 end

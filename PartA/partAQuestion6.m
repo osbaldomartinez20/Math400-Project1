@@ -1,4 +1,4 @@
-function [q] = partAQuestion6()
+function [y] = partAQuestion6()
 %question 6 on project A
 f = @(x) sin(x) + (0.3*sin(2*x)) - (0.4*sin(3*x));
 n = 101;
@@ -28,8 +28,41 @@ y2 = calculateY(f2,n,fp);
 y3 = calculateY(f3,n,fp);
 y4 = calculateY(f4,n,fp);
 
-q = zeros(n-1,2);
-q(:,1) = dy4;
-q(:,2) = y4;
+figure();
+plot(linspace(0,fp,n-1),dy1);
+xlabel('X[0 to 6pi), n = 100 points');
+ylabel('Value of 1st prime of f(x)');
+hold on;
+plot(linspace(0,fp,n-1),y1);
+legend('Prime with D0ny','Actual Prime');
+hold off;
+
+figure();
+plot(linspace(0,fp,n-1),dy2);
+xlabel('X[0 to 6pi), n = 100 points');
+ylabel('Value of 2nd prime of f(x)');
+hold on;
+plot(linspace(0,fp,n-1),y2);
+legend('Prime with D0ny','Actual Prime');
+hold off;
+
+figure();
+plot(linspace(0,fp,n-1),dy3);
+xlabel('X[0 to 6pi), n = 100 points');
+ylabel('Value of 3rd prime of f(x)');
+hold on;
+plot(linspace(0,fp,n-1),y3);
+legend('Prime with D0ny','Actual Prime');
+hold off;
+
+figure();
+plot(linspace(0,fp,n-1),dy4);
+xlabel('X[0 to 6pi), n = 100 points');
+ylabel('Value of 4th prime of f(x)');
+hold on;
+plot(linspace(0,fp,n-1),y4);
+legend('Prime with D0ny','Actual Prime');
+hold off;
+
 end
 
