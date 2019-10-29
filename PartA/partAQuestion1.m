@@ -3,7 +3,7 @@ function [w] = partAQuestion1()
 %by using a center difference.
 f = @(x) exp(sin(x));
 fp = 4*pi;
-n = 100;
+n = 101;
 
 %get w from centerDiff.m
 w = centerDiff(f,n,fp);

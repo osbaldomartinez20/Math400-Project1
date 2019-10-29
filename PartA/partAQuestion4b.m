@@ -1,24 +1,46 @@
 function [x] = partAQuestion4b()
 %set the function
 h = @(x)sin(x) + (sin(10*x));
+hP = @(x)cos(x) + (10*cos(10*x));
 fp = 6 * pi;
-n = 100;
+n80 = 81;
+n20 = 21;
+n10 = 11;
 
 %get w from centerDiff.m
-w = centerDiff(h,n,fp);
+w80 = centerDiff(h,n80,fp);
+w20 = centerDiff(h,n20,fp);
+w10 = centerDiff(h,n10,fp);
 
-%get y from calculateY.m
-y = calculateY(h,n,fp);
+%get y' from calculateY.m
+y80 = calculateY(hP,n80,fp);
+y20 = calculateY(hP,n20,fp);
+y10 = calculateY(hP,n10,fp);
 
-%get D0 from calculateD0.m
-D0 = calculateD0n(n-1,1);
+%graph of 80 points
+figure();
+plot(linspace(0,fp,n80-1),w80);
+xlabel('X[0 to 6pi), n = 80 points');
+ylabel('Value of prime of g(x)');
+hold on;
+plot(linspace(0,fp,n80-1),y80);
+hold off;
 
-%get D0y from calculateD0ny.m
-D0y = calculateD0ny(D0,y,n,fp,1);
+%graph of 20 points
+figure();
+plot(linspace(0,fp,n20-1),w20);
+xlabel('X[0 to 6pi), n = 20 points');
+ylabel('Value of prime of g(x)');
+hold on;
+plot(linspace(0,fp,n20-1),y20);
+hold off;
 
-%x is used to compare side by side the results from
-%D0y and w.
-x = zeros(n-1,2);
-x(:,1) = D0y;
-x(:,2) = w;
+%graph of 10 points
+figure();
+plot(linspace(0,fp,n10-1),w10);
+xlabel('X[0 to 6pi), n = 10 points');
+ylabel('Value of prime of g(x)');
+hold on;
+plot(linspace(0,fp,n10-1),y10);
+hold off;
 end

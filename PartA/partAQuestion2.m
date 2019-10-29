@@ -3,7 +3,7 @@ function [x] = partAQuestion2()
 %by using a D0 matrix.
 f = @(x) exp(sin(x));
 fp = 4*pi;
-n = 100;
+n = 101;
 
 %get w from partAQuestion1.m
 w = partAQuestion1();

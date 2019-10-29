@@ -3,7 +3,7 @@ function [D0D0y] = partAQuestion5()
 %by using a D0 matrix.
 f = @(x) exp(sin(x));
 fp = 4*pi;
-n = 100;
+n = 101;
 
 %get y from calculateY.m
 y = calculateY(f,n,fp);
