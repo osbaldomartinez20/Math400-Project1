@@ -1,11 +1,11 @@
-function w = centerDiff(f,n,fp)
+function w = centerDiff(f,m,fp)
 %parameter f is a function
-%parameter n is the number of points
+%parameter m is the number of points
 %fp is the last point of interval
 
 %make something to store the possible values of 
-%x from interval [0,fp) in n points, (0,fp,n).
-x = linspace(0,fp,n);
+%x from interval [0,fp) in m points, (0,fp,m).
+x = linspace(0,fp,m);
 w = zeros(length(x)-1,1);
 
 %max value of n = length(x)-1
