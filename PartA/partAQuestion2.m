@@ -31,6 +31,7 @@ xlabel('X[0 to 4pi), n = 100 points');
 ylabel('Value of prime of w and D0y');
 hold on;
 plot(linspace(0,fp,n-1),D0y);
+grid on;
 legend('Prime with center difference','Prime with D0y');
 hold off;
 

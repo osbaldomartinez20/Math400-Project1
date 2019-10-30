@@ -34,6 +34,7 @@ xlabel('X[0 to 6pi), n = 100 points');
 ylabel('Value of 1st prime of f(x)');
 hold on;
 plot(linspace(0,fp,n-1),y1);
+grid on;
 legend('Prime with D0ny','Actual Prime');
 hold off;
 
@@ -43,6 +44,7 @@ xlabel('X[0 to 6pi), n = 100 points');
 ylabel('Value of 2nd prime of f(x)');
 hold on;
 plot(linspace(0,fp,n-1),y2);
+grid on;
 legend('Prime with D0ny','Actual Prime');
 hold off;
 
@@ -52,6 +54,7 @@ xlabel('X[0 to 6pi), n = 100 points');
 ylabel('Value of 3rd prime of f(x)');
 hold on;
 plot(linspace(0,fp,n-1),y3);
+grid on;
 legend('Prime with D0ny','Actual Prime');
 hold off;
 
@@ -61,6 +64,7 @@ xlabel('X[0 to 6pi), n = 100 points');
 ylabel('Value of 4th prime of f(x)');
 hold on;
 plot(linspace(0,fp,n-1),y4);
+grid on;
 legend('Prime with D0ny','Actual Prime');
 hold off;
 

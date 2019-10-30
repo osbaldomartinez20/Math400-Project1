@@ -24,6 +24,7 @@ xlabel('X[0 to 4pi), n = 80 points');
 ylabel('Value of prime of f(x)');
 hold on;
 plot(linspace(0,fp,n80-1),y80);
+grid on;
 legend('Prime with center difference','Actual Prime');
 hold off;
 
@@ -34,6 +35,7 @@ xlabel('X[0 to 4pi), n = 20 points');
 ylabel('Value of prime of f(x)');
 hold on;
 plot(linspace(0,fp,n20-1),y20);
+grid on;
 legend('Prime with center difference','Actual Prime');
 hold off;
 
@@ -44,6 +46,7 @@ xlabel('X[0 to 4pi), n = 10 points');
 ylabel('Value of prime of f(x)');
 hold on;
 plot(linspace(0,fp,n10-1),y10);
+grid on;
 legend('Prime with center difference','Actual Prime');
 hold off;
 
