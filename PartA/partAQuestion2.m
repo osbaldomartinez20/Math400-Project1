@@ -3,10 +3,10 @@ function [x] = partAQuestion2()
 %by using a D0 matrix.
 f = @(x) exp(sin(x));
 fp = 4*pi;
-n = 101;
+n = 51;
 
 %get w from partAQuestion1.m
-w = partAQuestion1();
+w = centerDiff(f,n,fp);
 
 %get y from calculateY.m
 y = calculateY(f,n,fp);
