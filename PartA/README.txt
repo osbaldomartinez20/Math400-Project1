@@ -1,5 +1,6 @@
+% This is the same info as writeUpProjectA.pdf %
+
 Project A:
-%% The answers to questions that cannot be answered in code can be found here. %%
 
     Question 1:
 
@@ -56,6 +57,8 @@ For n = 50 I got the following results:
     0.5371
     0.7606
 
+For more results run the file partAQuestion1.m, found in folder ProjectA, and change the value of n. 
+
 
     Question 2:
     
@@ -111,7 +114,29 @@ For n = 50 I got the following results:
     0.5371    0.5371
     0.7606    0.7606
 
-The values of D0y and w are the exact same ones, thus D0y = w.
+The values of D0y and w are the exact same ones, thus D0y = w. If you want to double check results
+change the value of n in the file partAQuestion2.m inside folder ProjectA and run it.
+
+
+    Question 3:
+	
+	To see the graphs please open the jpg images that start with partAQuestion3 found inside ProjectA
+	folder or simply run partAQuestion3.m found in folder ProjectA.
+
+
+    Question 4:
+	
+	a:
+	To see the graphs please open the jpg images that start with partAQuestion4a found inside ProjectA
+	folder or simply run partAQuestion4a.m found in folder ProjectA.
+
+	b:
+	To see the graphs please open the jpg images that start with partAQuestion4b found inside ProjectA
+	folder or simply run partAQuestion4b.m found in folder ProjectA.
+
+	c:
+	To see the graphs please open the jpg images that start with partAQuestion4c found inside ProjectA
+	folder or simply run partAQuestion4c.m found in folder ProjectA.
 
 
     Question 5:
@@ -171,11 +196,16 @@ to be somewhat accurate for n = 19.
     0.4425    0.3906
     0.6665    0.6693 
 
+For more results run the file partAQuestion5.m, found in folder ProjectA, and change the value of n. 
+
 
     Question 6:
 
-As can be seen from the images named partAQuestion6*.jpg as the order of differentiation
+As can be seen from the jpg images, that start with partAQuestion6, as the order of differentiation
 increases the bigger the n gets, and therefore h(h=6pi/n) gets small, the more accurate
 the approximate value is to the real value. For n = 1000 and n = 15000 there seems to be
 almost no change, which might be due to how the computer calculates very small numbers. 
+
+To test out results open the file partAQuestion6.m in folder ProjectA and change the value of n and see
+how the graphs change with different n. 
 
