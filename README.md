@@ -1,4 +1,8 @@
+# Osbaldo Martinez
+# 916754207
+# 1 November 2019
 # Math400-Project1
+
 
 The code in folder ProjectA is used to solve the problems in Project A.
 projectA_writeup.pdf provides the answers to the questions that cannot
